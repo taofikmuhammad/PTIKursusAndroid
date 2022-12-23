@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="Home"
+        android:icon="@drawable/home_icon_navbar"
+        android:id="@+id/home"/>
+    <item android:title="Course"
+        android:icon="@drawable/course_icon_navbar"
+        android:id="@+id/course"/>
+    <item android:title="Tugas"
+        android:icon="@drawable/like_icon"
+        android:id="@+id/tugas"/>
+    <item android:title="Pembayaran"
+        android:icon="@drawable/schedule_icon_navbar"
+        android:id="@+id/pembayaran"/>
+    <item android:title="Profil"
+        android:icon="@drawable/profile_icon_navbar"
+        android:id="@+id/profil"/>
+</menu>
