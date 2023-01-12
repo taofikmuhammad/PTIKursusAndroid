@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:background="@drawable/bg_top"
+    android:background="@drawable/bg_home"
     tools:context=".HomeFragment">
 
     <!-- TODO: Update blank fragment layout -->
@@ -29,7 +29,7 @@
             <ImageView
                 android:id="@+id/btn_profile"
                 android:layout_width="10dp"
-                android:layout_height="50dp"
+                android:layout_height="60dp"
                 android:layout_gravity="center"
                 android:layout_weight="1"
                 android:background="@drawable/btn_white2"
@@ -45,19 +45,23 @@
                 android:text="Hi Ilma Amalia\nLets Start Learning"
                 android:textAlignment="viewStart"
                 android:textColor="@color/white"
-                android:textSize="18dp"
+                android:textSize="15dp"
                 android:paddingLeft="10dp"
-                android:textStyle="bold" />
+                android:textStyle="bold"
+                android:layout_marginTop="7dp"/>
 
             <ImageView
                 android:id="@+id/btn_notification"
                 android:layout_width="10dp"
-                android:layout_height="50dp"
+                android:layout_height="60dp"
                 android:layout_gravity="center"
                 android:layout_weight="1"
                 android:background="@drawable/btn_white2"
                 android:padding="13dp"
-                android:src="@drawable/lucide_bell_ring" />
+                android:src="@drawable/lucide_bell_ring"
+                android:elevation="5dp"
+
+                />
 
         </LinearLayout>
             <EditText
@@ -156,90 +160,104 @@
                 </LinearLayout>
 
             </HorizontalScrollView>
-
             <HorizontalScrollView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_marginLeft="25dp"
                 android:layout_marginRight="25dp"
                 android:layout_marginTop="20dp">
-
                 <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
-                    android:paddingTop="10dp"
-                    android:paddingBottom="10dp"
-                    android:orientation="horizontal" >
-
-                    <TextView
-                        android:layout_width="200dp"
-                        android:layout_height="250dp"
-                        android:layout_marginRight="5dp"
-                        android:elevation="5dp"
-                        android:paddingTop="10dp"
-                        android:paddingBottom="20dp"
-                        android:background="@drawable/bg_white_radius15"
-                        android:text="Machine Learning"
-                        android:fontFamily="@font/poppins_medium"
-                        android:textStyle="bold"
-                        android:textAlignment="center"
-                        android:textColor="@color/primary"
-                        android:textSize="15dp"/>
-                    <TextView
-                        android:layout_width="200dp"
-                        android:layout_height="250dp"
-                        android:layout_marginRight="5dp"
-                        android:layout_marginLeft="5dp"
-                        android:elevation="5dp"
-                        android:paddingTop="10dp"
-                        android:paddingBottom="20dp"
-                        android:background="@drawable/bg_white_radius15"
-                        android:text="Machine Learning"
-                        android:fontFamily="@font/poppins_medium"
-                        android:textStyle="bold"
-                        android:textAlignment="center"
-                        android:textColor="@color/primary"
-                        android:textSize="15dp"/>
-                    <TextView
-                        android:layout_width="200dp"
-                        android:layout_height="250dp"
-                        android:layout_marginRight="5dp"
-                        android:layout_marginLeft="5dp"
-                        android:elevation="5dp"
-                        android:paddingTop="10dp"
-                        android:paddingBottom="20dp"
-                        android:background="@drawable/bg_white_radius15"
-                        android:text="Machine Learning"
-                        android:fontFamily="@font/poppins_medium"
-                        android:textStyle="bold"
-                        android:textAlignment="center"
-                        android:textColor="@color/primary"
-                        android:textSize="15dp"/>
-
-
-
+                    android:orientation="horizontal">
                     <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:orientation="vertical">
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginLeft="5dp"
+                        android:background="@drawable/bg_white_radius10"
+                        android:orientation="vertical"
+                        android:elevation="5dp">
 
-<!--                        <ImageView-->
-<!--                            android:layout_width="200dp"-->
-<!--                            android:scaleType="centerCrop"-->
-<!--                            android:layout_height="100dp"-->
-<!--                            android:src="@drawable/algorithm" />-->
-<!--                        <TextView-->
-<!--                            android:id="@+id/textView17"-->
-<!--                            android:layout_width="match_parent"-->
-<!--                            android:layout_height="wrap_content"-->
-<!--                            android:text="TextView" />-->
-
+                        <ImageView
+                            android:layout_width="210dp"
+                            android:layout_height="200dp"
+                            android:src="@drawable/algorithm"
+                            android:scaleType="centerCrop"
+                            android:elevation="10dp">
+                        </ImageView>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Algoritma Dasar"
+                            android:background="@drawable/bg_white2"
+                            android:layout_marginTop="15dp"
+                            android:layout_marginLeft="15dp"
+                            android:fontFamily="@font/poppins_medium"
+                            android:textSize="16sp"
+                            android:textColor="@color/primary"
+                            android:layout_marginBottom="15dp">
+                        </TextView>
                     </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginLeft="25dp"
+                        android:background="@drawable/bg_white_radius10"
+                        android:orientation="vertical"
+                        android:elevation="5dp">
 
+                        <ImageView
+                            android:layout_width="210dp"
+                            android:layout_height="200dp"
+                            android:src="@drawable/jarkom"
+                            android:scaleType="centerCrop"
+                            android:elevation="10dp">
+                        </ImageView>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Jaringan Komputer Dasar"
+                            android:background="@drawable/bg_white2"
+                            android:layout_marginTop="15dp"
+                            android:layout_marginLeft="15dp"
+                            android:fontFamily="@font/poppins_medium"
+                            android:textSize="16sp"
+                            android:textColor="@color/primary"
+                            android:layout_marginBottom="15dp">
+                        </TextView>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginLeft="25dp"
+                        android:background="@drawable/bg_white_radius10"
+                        android:orientation="vertical"
+                        android:elevation="5dp">
+
+                        <ImageView
+                            android:layout_width="210dp"
+                            android:layout_height="200dp"
+                            android:src="@drawable/machine"
+                            android:scaleType="centerCrop"
+                            android:elevation="10dp">
+                        </ImageView>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Machine Learning"
+                            android:background="@drawable/bg_white2"
+                            android:layout_marginTop="15dp"
+                            android:layout_marginLeft="15dp"
+                            android:fontFamily="@font/poppins_medium"
+                            android:textSize="16sp"
+                            android:textColor="@color/primary"
+                            android:layout_marginBottom="15dp">
+                        </TextView>
+                    </LinearLayout>
                 </LinearLayout>
-
-
-
             </HorizontalScrollView>
 
             <LinearLayout
@@ -257,7 +275,9 @@
                     android:layout_weight="1"
                     android:textAlignment="viewStart"
                     android:fontFamily="@font/poppins_medium"
-                    android:text="Rekomendasi" />
+                    android:text="Rekomendasi"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"/>
 
                 <TextView
                     android:id="@+id/textView29"
@@ -306,11 +326,11 @@
                             android:layout_height="match_parent"
                             android:layout_weight="1"
                             android:fontFamily="@font/poppins_medium"
-                            android:gravity="center"
+                            android:gravity="left"
                             android:text="Machine Learning"
-
+                            android:layout_marginTop="20dp"
                             android:textColor="@color/primary"
-                            android:textSize="15dp" />
+                            android:textSize="17dp" />
 
                         <ImageView
                             android:layout_width="8dp"
@@ -342,18 +362,18 @@
                             android:layout_height="match_parent"
                             android:layout_weight="1"
                             android:padding="11dp"
-                            android:src="@drawable/machine_learning_icon" />
+                            android:src="@drawable/neural" />
 
                         <TextView
                             android:layout_width="150dp"
                             android:layout_height="match_parent"
                             android:layout_weight="1"
                             android:fontFamily="@font/poppins_medium"
-                            android:gravity="center"
-                            android:text="Machine Learning"
-
+                            android:gravity="left"
+                            android:text="Algoritma"
+                            android:layout_marginTop="20dp"
                             android:textColor="@color/primary"
-                            android:textSize="15dp" />
+                            android:textSize="17dp" />
 
                         <ImageView
                             android:layout_width="8dp"
@@ -378,25 +398,26 @@
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:orientation="horizontal">
+                        android:orientation="horizontal"
+                        android:layout_marginBottom="10dp">
 
                         <ImageView
                             android:layout_width="10dp"
                             android:layout_height="match_parent"
                             android:layout_weight="1"
                             android:padding="11dp"
-                            android:src="@drawable/machine_learning_icon" />
+                            android:src="@drawable/network" />
 
                         <TextView
                             android:layout_width="150dp"
                             android:layout_height="match_parent"
                             android:layout_weight="1"
                             android:fontFamily="@font/poppins_medium"
-                            android:gravity="center"
-                            android:text="Machine Learning"
-
+                            android:gravity="left"
+                            android:text="Jaringan Komputer"
+                            android:layout_marginTop="20dp"
                             android:textColor="@color/primary"
-                            android:textSize="15dp" />
+                            android:textSize="17dp" />
 
                         <ImageView
                             android:layout_width="8dp"
