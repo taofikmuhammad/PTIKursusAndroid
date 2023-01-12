@@ -7,16 +7,180 @@
     tools:context=".HomeFragment">
 
     <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:textAlignment="center"
-        android:layout_marginTop="200dp"
-        android:layout_gravity="center"
-        android:text="HALAMAN PEMBAYARAM"
-        android:fontFamily="@font/poppins_medium"
-        android:textStyle="bold"
-        android:textColor="@color/primary"
-        android:textSize="20dp"/>
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginRight="25dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/btn_back"
+                    android:layout_width="10dp"
+                    android:layout_height="50dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/btn_white2"
+                    android:elevation="10dp"
+                    android:padding="10dp"
+                    android:src="@drawable/arrow_left_icon" />
+
+                <TextView
+                    android:id="@+id/textView4"
+                    android:layout_width="250dp"
+                    android:layout_height="match_parent"
+                    android:fontFamily="@font/poppins_medium"
+                    android:paddingTop="15dp"
+                    android:text="Payment"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:textSize="24dp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:layout_width="10dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:elevation="10dp"
+                    android:padding="10dp" />
+
+
+            </LinearLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="135dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:elevation="10dp"
+                android:padding="15dp"
+                android:background="@drawable/bg_white_radius25">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Machine Learning For Beginner"
+                        android:fontFamily="@font/poppins_medium"
+                        android:textColor="@color/primary"
+                        android:textStyle="bold"
+                        android:textSize="18dp"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Batas Akhir: 20-Januari-2023"
+                        android:fontFamily="@font/poppins_medium"
+                        android:textColor="@color/primary"
+                        android:textStyle="bold"
+                        android:textSize="13dp"/>
+
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <Button
+                            android:layout_width="15dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:textAllCaps="false"
+                            android:layout_marginRight="10dp"
+                            android:text="Kursus Lain" />
+                        <Button
+                            android:layout_width="15dp"
+                            android:layout_height="wrap_content"
+                          />
+
+                        <Button
+                            android:layout_width="15dp"
+                            android:layout_height="wrap_content"
+                            android:textAllCaps="false"
+                            android:layout_weight="1"
+                            android:text="Bayar" />
+                    </LinearLayout>
+                </LinearLayout>
+            </FrameLayout>
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="135dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="20dp"
+                android:elevation="10dp"
+                android:layout_marginRight="20dp"
+                android:padding="15dp"
+                android:background="@drawable/bg_white_radius25">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Machine Learning For Beginner"
+                        android:fontFamily="@font/poppins_medium"
+                        android:textColor="@color/primary"
+                        android:textStyle="bold"
+                        android:textSize="18dp"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Batas Akhir: 20-Januari-2023"
+                        android:fontFamily="@font/poppins_medium"
+                        android:textColor="@color/primary"
+                        android:textStyle="bold"
+                        android:textSize="13dp"/>
+
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <Button
+                            android:layout_width="15dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:textAllCaps="false"
+                            android:layout_marginRight="10dp"
+                            android:text="Kursus Lain" />
+                        <Button
+                            android:layout_width="15dp"
+                            android:layout_height="wrap_content"
+                            />
+
+                        <Button
+                            android:layout_width="15dp"
+                            android:layout_height="wrap_content"
+                            android:textAllCaps="false"
+                            android:layout_weight="1"
+                            android:text="Bayar" />
+                    </LinearLayout>
+                </LinearLayout>
+            </FrameLayout>
+
+
+
+
+        </LinearLayout>
+    </ScrollView>
 
 </FrameLayout>

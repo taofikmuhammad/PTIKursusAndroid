@@ -166,7 +166,7 @@
                     android:layout_height="match_parent"
                     android:layout_weight="1"
                     android:fontFamily="@font/poppins_medium"
-                    android:text="@string/notif_2"
+                    android:text="@string/notif_1"
                     android:textAlignment="viewStart"
                     android:textColor="@color/primary"
                     android:textSize="13dp" />
@@ -224,7 +224,7 @@
                     android:layout_height="match_parent"
                     android:layout_weight="1"
                     android:fontFamily="@font/poppins_medium"
-                    android:text="@string/notif_2"
+                    android:text="@string/notif_1"
                     android:textAlignment="viewStart"
                     android:textColor="@color/primary"
                     android:textSize="13dp" />
@@ -262,7 +262,7 @@
                     android:layout_height="match_parent"
                     android:layout_weight="1"
                     android:fontFamily="@font/poppins_medium"
-                    android:text="@string/notif_2"
+                    android:text="@string/notif_1"
                     android:textAlignment="viewStart"
                     android:textColor="@color/primary"
                     android:textSize="13dp" />
@@ -307,7 +307,7 @@
                     android:layout_height="match_parent"
                     android:layout_weight="1"
                     android:fontFamily="@font/poppins_medium"
-                    android:text="@string/notif_2"
+                    android:text="@string/notif_1"
                     android:textAlignment="viewStart"
                     android:textColor="@color/primary"
                     android:textSize="13dp" />
