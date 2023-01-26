@@ -40,7 +40,7 @@ public class SplashScreen1 extends AppCompatActivity {
         btnsplash.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(SplashScreen1.this, Login.class);
+                Intent intent = new Intent(SplashScreen1.this, SplashScreen2.class);
                 startActivity(intent);
                 finish();
             }

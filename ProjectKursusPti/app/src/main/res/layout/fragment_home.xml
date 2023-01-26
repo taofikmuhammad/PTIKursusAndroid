@@ -5,6 +5,7 @@
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:background="@drawable/bg_home"
+    android:id="@+id/container"
     tools:context=".HomeFragment">
 
     <!-- TODO: Update blank fragment layout -->
@@ -38,7 +39,7 @@
                 android:src="@drawable/poto_profile" />
 
             <TextView
-                android:id="@+id/textView4"
+                android:id="@+id/namalengkap"
                 android:layout_width="230dp"
                 android:layout_height="match_parent"
                 android:fontFamily="@font/poppins_medium"
@@ -64,200 +65,125 @@
                 />
 
         </LinearLayout>
+
             <EditText
                 android:layout_width="match_parent"
-                android:layout_height="47dp"
-                android:layout_marginTop="20dp"
+                android:layout_height="55dp"
+                android:focusableInTouchMode="true"
+                android:textIsSelectable="true"
                 android:layout_marginLeft="25dp"
+                android:layout_marginTop="20dp"
                 android:layout_marginRight="25dp"
+                android:background="@drawable/bg_white2"
                 android:drawableLeft="@drawable/lucide_search"
-                android:hint="Cari Kursus.."
-                android:textColor="@color/primary"
+                android:drawableRight="@drawable/keyboard_voice"
                 android:fontFamily="@font/poppins_medium"
+                android:hint="Cari Kursus.."
                 android:paddingLeft="13dp"
                 android:paddingRight="13dp"
-                android:textColorHint="@color/primary"
-                android:drawableRight="@drawable/keyboard_voice"
-                android:background="@drawable/bg_white"/>
+                android:elevation="10dp"
+                android:textColor="@color/primary"
+                android:textColorHint="@color/primary" />
 
-            <HorizontalScrollView
-                android:layout_width="match_parent"
-                android:layout_marginLeft="25dp"
-                android:layout_marginRight="25dp"
-                android:layout_height="64dp">
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_marginTop="15dp"
-                    android:orientation="horizontal" >
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginLeft="5dp"
-                        android:layout_marginRight="5dp"
-                        android:layout_weight="1"
-                        android:fontFamily="@font/poppins_medium"
-                        android:textSize="18dp"
-                        android:textColor="@color/primary"
-                        android:background="@drawable/bg_white_radius15"
-                        android:padding="10dp"
-                        android:text="Jarkom" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginLeft="5dp"
-                        android:layout_marginRight="5dp"
-                        android:layout_weight="1"
-                        android:background="@drawable/bg_white_radius15"
-                        android:fontFamily="@font/poppins_medium"
-                        android:padding="10dp"
-                        android:text="Alpro"
-                        android:textColor="@color/primary"
-                        android:textSize="20dp" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginLeft="5dp"
-                        android:layout_marginRight="5dp"
-                        android:layout_weight="1"
-                        android:fontFamily="@font/poppins_medium"
-                        android:textSize="18dp"
-                        android:textColor="@color/primary"
-                        android:background="@drawable/bg_white_radius15"
-                        android:padding="10dp"
-                        android:text="Machine Learning" />
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginLeft="5dp"
-                        android:layout_marginRight="5dp"
-                        android:layout_weight="1"
-                        android:fontFamily="@font/poppins_medium"
-                        android:textSize="18dp"
-                        android:textColor="@color/primary"
-                        android:background="@drawable/bg_white_radius15"
-                        android:padding="10dp"
-                        android:text="Machine Learning" />
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginLeft="5dp"
-                        android:layout_marginRight="5dp"
-                        android:layout_weight="1"
-                        android:fontFamily="@font/poppins_medium"
-                        android:textSize="18dp"
-                        android:textColor="@color/primary"
-                        android:background="@drawable/bg_white_radius15"
-                        android:padding="10dp"
-                        android:text="Machine Learning" />
-
-
-
-                </LinearLayout>
-
-            </HorizontalScrollView>
             <HorizontalScrollView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_marginLeft="25dp"
-                android:layout_marginRight="25dp"
-                android:layout_marginTop="20dp">
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="25dp">
+
                 <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                     android:orientation="horizontal">
                     <LinearLayout
+                        android:id="@+id/machine_learning_course"
                         android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="20dp"
-                        android:layout_marginLeft="5dp"
-                        android:background="@drawable/bg_white_radius10"
+                        android:layout_height="230dp"
+                        android:background="@drawable/bg_white2"
+                        android:elevation="5dp"
+                        android:layout_marginRight="15dp"
                         android:orientation="vertical"
-                        android:elevation="5dp">
+                        android:padding="10dp">
+
 
                         <ImageView
-                            android:layout_width="210dp"
-                            android:layout_height="200dp"
-                            android:src="@drawable/algorithm"
-                            android:scaleType="centerCrop"
-                            android:elevation="10dp">
-                        </ImageView>
+                            android:layout_width="250dp"
+                            android:layout_height="190dp"
+                            android:padding="30dp"
+                            android:src="@drawable/machine_learning_icon" />
+
                         <TextView
-                            android:layout_width="wrap_content"
+                            android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:text="Algoritma Dasar"
-                            android:background="@drawable/bg_white2"
-                            android:layout_marginTop="15dp"
-                            android:layout_marginLeft="15dp"
                             android:fontFamily="@font/poppins_medium"
-                            android:textSize="16sp"
-                            android:textColor="@color/primary"
-                            android:layout_marginBottom="15dp">
-                        </TextView>
-                    </LinearLayout>
-                    <LinearLayout
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="20dp"
-                        android:layout_marginLeft="25dp"
-                        android:background="@drawable/bg_white_radius10"
-                        android:orientation="vertical"
-                        android:elevation="5dp">
-
-                        <ImageView
-                            android:layout_width="210dp"
-                            android:layout_height="200dp"
-                            android:src="@drawable/jarkom"
-                            android:scaleType="centerCrop"
-                            android:elevation="10dp">
-                        </ImageView>
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="Jaringan Komputer Dasar"
-                            android:background="@drawable/bg_white2"
-                            android:layout_marginTop="15dp"
-                            android:layout_marginLeft="15dp"
-                            android:fontFamily="@font/poppins_medium"
-                            android:textSize="16sp"
-                            android:textColor="@color/primary"
-                            android:layout_marginBottom="15dp">
-                        </TextView>
-                    </LinearLayout>
-                    <LinearLayout
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="20dp"
-                        android:layout_marginLeft="25dp"
-                        android:background="@drawable/bg_white_radius10"
-                        android:orientation="vertical"
-                        android:elevation="5dp">
-
-                        <ImageView
-                            android:layout_width="210dp"
-                            android:layout_height="200dp"
-                            android:src="@drawable/machine"
-                            android:scaleType="centerCrop"
-                            android:elevation="10dp">
-                        </ImageView>
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
                             android:text="Machine Learning"
-                            android:background="@drawable/bg_white2"
-                            android:layout_marginTop="15dp"
-                            android:layout_marginLeft="15dp"
-                            android:fontFamily="@font/poppins_medium"
-                            android:textSize="16sp"
                             android:textColor="@color/primary"
-                            android:layout_marginBottom="15dp">
-                        </TextView>
+                            android:textSize="13dp" />
+
+
                     </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/algoritmacourse"
+                        android:layout_width="wrap_content"
+                        android:layout_height="230dp"
+                        android:background="@drawable/bg_white2"
+                        android:elevation="5dp"
+                        android:layout_marginRight="15dp"
+                        android:orientation="vertical"
+                        android:padding="10dp">
+
+
+                        <ImageView
+                            android:layout_width="250dp"
+                            android:layout_height="190dp"
+                            android:padding="30dp"
+                            android:src="@drawable/neural" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/poppins_medium"
+                            android:text="Algoritma dan Pemrograman Dasar"
+                            android:textColor="@color/primary"
+                            android:textSize="13dp" />
+
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:id="@+id/jarkomcourse"
+                        android:layout_width="wrap_content"
+                        android:layout_height="230dp"
+                        android:background="@drawable/bg_white2"
+                        android:elevation="5dp"
+                        android:layout_marginRight="15dp"
+                        android:orientation="vertical"
+                        android:padding="10dp">
+
+
+                        <ImageView
+                            android:layout_width="250dp"
+                            android:layout_height="190dp"
+                            android:padding="30dp"
+                            android:src="@drawable/network" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/poppins_medium"
+                            android:text="Jaringan Komputer Dasar"
+                            android:textColor="@color/primary"
+                            android:textSize="13dp" />
+
+
+                    </LinearLayout>
+
+
+
                 </LinearLayout>
+
+
             </HorizontalScrollView>
 
             <LinearLayout
@@ -299,6 +225,7 @@
                 android:layout_weight="1"
                 android:orientation="vertical">
                 <LinearLayout
+                    android:id="@+id/machine_learning_course2"
                     android:layout_width="match_parent"
                     android:layout_height="97dp"
                     android:layout_marginLeft="25dp"
@@ -341,7 +268,9 @@
                     </LinearLayout>
 
                 </LinearLayout>
+
                 <LinearLayout
+                    android:id="@+id/algoritmacourse2"
                     android:layout_width="match_parent"
                     android:layout_height="97dp"
                     android:layout_marginLeft="25dp"
@@ -367,11 +296,11 @@
                         <TextView
                             android:layout_width="150dp"
                             android:layout_height="match_parent"
+                            android:layout_marginTop="20dp"
                             android:layout_weight="1"
                             android:fontFamily="@font/poppins_medium"
                             android:gravity="left"
                             android:text="Algoritma"
-                            android:layout_marginTop="20dp"
                             android:textColor="@color/primary"
                             android:textSize="17dp" />
 
@@ -384,7 +313,9 @@
                     </LinearLayout>
 
                 </LinearLayout>
+
                 <LinearLayout
+                    android:id="@+id/jarkomcourse2"
                     android:layout_width="match_parent"
                     android:layout_height="97dp"
                     android:layout_marginLeft="25dp"

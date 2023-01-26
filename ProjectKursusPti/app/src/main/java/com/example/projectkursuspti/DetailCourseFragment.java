@@ -8,34 +8,35 @@ import androidx.fragment.app.FragmentTransaction;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Button;
+import android.widget.LinearLayout;
+import android.widget.TextView;
 
 
-public class PaymentFragment extends Fragment {
+public class DetailCourseFragment extends Fragment {
+    TextView btn_checkout;
+    LinearLayout materi_pendahuluan;
 
-    Button kursuslain, btn_checkout;
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        View view =  inflater.inflate(R.layout.fragment_payment, container, false);
-
-        kursuslain = view.findViewById(R.id.kursuslain);
+        View view =  inflater.inflate(R.layout.fragment_detail_course, container, false);
         btn_checkout = view.findViewById(R.id.btn_checkout);
-        kursuslain.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Fragment CourseFrag = new CourseFragment();
-                FragmentTransaction fm = getActivity().getSupportFragmentManager().beginTransaction();
-                fm.replace(R.id.container,CourseFrag).commit();
-            }
-        });
+        materi_pendahuluan = view.findViewById(R.id.materi_pendahuluan);
         btn_checkout.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Fragment CourseFrag = new CheckoutFragment();
+                Fragment ProfileFragment = new PaymentFragment();
                 FragmentTransaction fm = getActivity().getSupportFragmentManager().beginTransaction();
-                fm.replace(R.id.container,CourseFrag).commit();
+                fm.replace(R.id.frame_layout,ProfileFragment).commit();
+            }
+        });
+        materi_pendahuluan.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Fragment ProfileFragment = new MateriFragment();
+                FragmentTransaction fm = getActivity().getSupportFragmentManager().beginTransaction();
+                fm.replace(R.id.frame_layout,ProfileFragment).commit();
             }
         });
         return view;

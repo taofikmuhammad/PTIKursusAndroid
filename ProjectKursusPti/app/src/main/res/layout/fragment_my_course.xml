@@ -116,7 +116,7 @@
                     android:layout_height="match_parent"
                     android:layout_weight="1"
                     android:padding="11dp"
-                    android:src="@drawable/laptop_code_icon" />
+                    android:src="@drawable/neural" />
 
                 <TextView
                     android:id="@+id/textView9"

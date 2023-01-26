@@ -8,10 +8,10 @@
         android:icon="@drawable/course_icon_navbar"
         android:id="@+id/course"/>
     <item android:title="Tugas"
-        android:icon="@drawable/like_icon"
+        android:icon="@drawable/task_icon"
         android:id="@+id/tugas"/>
     <item android:title="Pembayaran"
-        android:icon="@drawable/schedule_icon_navbar"
+        android:icon="@drawable/payment2_icon"
         android:id="@+id/pembayaran"/>
     <item android:title="Profil"
         android:icon="@drawable/profile_icon_navbar"

@@ -32,12 +32,11 @@
         app:srcCompat="@drawable/poto_profile" />
 
     <TextView
-        android:id="@+id/textView3"
+        android:id="@+id/namalengkaptop"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         android:fontFamily="@font/poppins_medium"
-        android:text="Randy Azhar Alman Faluthi"
         android:textColor="@color/white"
         android:textSize="20dp"
         android:textStyle="bold"
@@ -46,17 +45,16 @@
         app:layout_constraintTop_toBottomOf="@+id/imageView2" />
 
     <TextView
-        android:id="@+id/textView5"
+        android:id="@+id/emailtop"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="@font/poppins_medium"
-        android:text="azharalman@gmail.com"
         android:textColor="@color/white"
         android:textSize="15dp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+        app:layout_constraintTop_toBottomOf="@+id/namalengkaptop" />
 
     <LinearLayout
         android:id="@+id/linearLayout"
@@ -104,6 +102,7 @@
             </LinearLayout>
 
             <LinearLayout
+                android:id="@+id/btn_update"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_margin="15dp"
@@ -178,12 +177,11 @@
                     android:textStyle="bold" />
 
                 <TextView
-                    android:id="@+id/textView11"
+                    android:id="@+id/namalengkap"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:textAlignment="viewEnd"
                     android:layout_weight="1"
-                    android:text="Randy Azhar Alman Faluthi"
                     android:textSize="16dp" />
 
             </LinearLayout>
@@ -214,11 +212,10 @@
                     android:textStyle="bold" />
 
                 <TextView
-
+                    android:id="@+id/email"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="azharalman@gmail.com"
                     android:textAlignment="viewEnd"
                     android:textSize="16dp" />
 
@@ -250,12 +247,11 @@
                     android:textStyle="bold" />
 
                 <TextView
-
+                    android:id="@+id/username"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:textAlignment="viewEnd"
-                    android:text="azharalamn"
                     android:textStyle="bold"
                     android:textSize="16dp" />
 
@@ -286,11 +282,10 @@
                     android:textStyle="bold" />
 
                 <TextView
-
+                    android:id="@+id/password"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="*********"
                     android:textAlignment="viewEnd"
                     android:textSize="16dp"
                     android:textStyle="bold" />

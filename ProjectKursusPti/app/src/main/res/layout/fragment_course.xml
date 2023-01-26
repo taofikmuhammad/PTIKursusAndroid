@@ -1,22 +1,244 @@
 <?xml version="1.0" encoding="utf-8"?>
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/bg_top"
+    android:background="@drawable/bg_course"
+    android:id="@+id/container"
     tools:context=".HomeFragment">
 
     <!-- TODO: Update blank fragment layout -->
-    <TextView
+
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:textAlignment="center"
-        android:layout_marginTop="200dp"
-        android:layout_gravity="center"
-        android:text="HALAMAN COURSE"
-        android:fontFamily="@font/poppins_medium"
-        android:textStyle="bold"
-        android:textColor="@color/primary"
-        android:textSize="20dp"/>
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingBottom="20dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginRight="25dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/btn_profile"
+                    android:layout_width="10dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:background="@drawable/btn_white2"
+                    android:elevation="10dp"
+                    android:padding="5dp"
+                    android:src="@drawable/poto_profile" />
+
+                <TextView
+                    android:id="@+id/textView4"
+                    android:layout_width="230dp"
+                    android:layout_height="match_parent"
+                    android:fontFamily="@font/poppins_medium"
+                    android:paddingTop="15dp"
+                    android:text="Course"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:textSize="24dp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/btn_notification"
+                    android:layout_width="10dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:background="@drawable/btn_white2"
+                    android:padding="13dp"
+                    android:src="@drawable/lucide_bell_ring" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="40dp"
+                android:layout_marginRight="25dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/ongoing"
+                    android:layout_width="wrap_content"
+                    android:layout_height="45dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/btn_color2"
+                    android:fontFamily="@font/poppins_medium"
+                    android:paddingTop="8dp"
+                    android:text="Tersedia"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:textSize="18dp" />
+
+                <TextView
+                    android:id="@+id/mycourse"
+                    android:layout_width="wrap_content"
+                    android:layout_height="45dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/btn_white2"
+                    android:fontFamily="@font/poppins_medium"
+                    android:paddingTop="8dp"
+                    android:text="Kursus Ku"
+                    android:textAlignment="center"
+                    android:textColor="@color/primary"
+                    android:textSize="18dp" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/machine_learning_course"
+                android:layout_width="match_parent"
+                android:layout_height="97dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="25dp"
+                android:background="@drawable/bg_white_radius25"
+                android:elevation="5dp"
+                android:orientation="vertical"
+                android:padding="15dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="10dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:padding="11dp"
+                        android:src="@drawable/machine_learning_icon" />
+
+                    <TextView
+                        android:layout_width="150dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/poppins_medium"
+                        android:gravity="center"
+                        android:text="Machine Learning"
+                        android:textAlignment="viewStart"
+                        android:textColor="@color/primary"
+                        android:textSize="15dp" />
+
+                    <ImageView
+                        android:layout_width="8dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:padding="20dp"
+                        android:src="@drawable/arrow_right_icon" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/algoritmacourse"
+                android:layout_width="match_parent"
+                android:layout_height="97dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="25dp"
+                android:background="@drawable/bg_white_radius25"
+                android:elevation="5dp"
+                android:orientation="vertical"
+                android:padding="15dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="10dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:padding="11dp"
+                        android:src="@drawable/neural" />
+
+                    <TextView
+                        android:layout_width="150dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/poppins_medium"
+                        android:gravity="center"
+                        android:text="Algoritma dan Pemrograman Dasar"
+                        android:textAlignment="viewStart"
+                        android:textColor="@color/primary"
+                        android:textSize="15dp" />
+
+                    <ImageView
+                        android:layout_width="8dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:padding="20dp"
+                        android:src="@drawable/arrow_right_icon" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/jarkomcourse"
+                android:layout_width="match_parent"
+                android:layout_height="97dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="25dp"
+                android:background="@drawable/bg_white_radius25"
+                android:elevation="5dp"
+                android:orientation="vertical"
+                android:padding="15dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="10dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:padding="11dp"
+                        android:src="@drawable/network" />
+
+                    <TextView
+                        android:layout_width="150dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/poppins_medium"
+                        android:gravity="center"
+                        android:text="Jaringan Komputer Dasar"
+                        android:textAlignment="viewStart"
+                        android:textColor="@color/primary"
+                        android:textSize="15dp" />
+
+                    <ImageView
+                        android:layout_width="8dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:padding="20dp"
+                        android:src="@drawable/arrow_right_icon" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+
+
+        </LinearLayout>
+    </ScrollView>
 
 </FrameLayout>
